@@ -31,7 +31,7 @@ current_image_path = image_dict[current_image_name]
 
 # Load and display the image as large as possible (fit the screen)
 image = Image.open(current_image_path)
-st.image(image, caption=current_image_name, use_column_width=True)
+st.image(image, caption=current_image_name, use_container_width=True)
 
 # Display next and back buttons
 col1, col2, col3 = st.columns([1, 1, 1])
